@@ -1,4 +1,5 @@
 const { Readable } = require("stream");
+const { runInThisContext } = require("vm");
 
 class StreamFromArray extends Readable {
   constructor(arr) {
@@ -14,6 +15,7 @@ class StreamFromArray extends Readable {
 
       this.index = this.index + 1;
     }
+
     this.push(null);
   }
 }
