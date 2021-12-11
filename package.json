@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony-top-level-await index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "multiparty": "^4.2.2"
+    "multiparty": "^4.2.2",
+    "csvtojson": "^2.0.10",
+    "debug": "^4.1.1",
+    "json-to-csv-stream": "^1.1.0",
+    "stream-concat": "^0.3.0"
   }
 }
